@@ -54,12 +54,12 @@ jobs:
           wget https://www.st.com/resource/en/svd/stm32g0_svd.zip    
           unzip stm32g0_svd* -d ./tmp          
           cp -r ./tmp/STM32G0*/* $GITHUB_WORKSPACE/g0
-          cp -r ./tmp/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesG0.htm
+          cp -r ./tmp/STM32G0_svd/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesG0.htm
           rm -r tmp
           wget https://www.st.com/resource/en/svd/stm32g4_svd.zip    
           unzip stm32g4_svd* -d ./tmp          
           cp -r ./tmp/STM32G4*/* $GITHUB_WORKSPACE/g4
-          cp -r ./tmp/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesG4.htm
+          cp -r ./tmp/STM32G4_svd/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesG4.htm
           rm -r tmp
           wget https://www.st.com/resource/en/svd/stm32h7_svd.zip    
           unzip stm32g0_svd* -d ./tmp          
