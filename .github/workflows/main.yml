@@ -25,12 +25,12 @@ jobs:
           unzip stm32f0_svd* -d ./tmp          
           cp -r ./tmp/STM32F0*/* $GITHUB_WORKSPACE/f0
           cp -r ./tmp/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotesF0.htm
-          rmdir -p tmp
+          rm -r tmp
           wget https://www.st.com/resource/en/svd/stm32f1_svd.zip    
           unzip stm32f1_svd* -d ./tmp          
           cp -r ./tmp/STM32F1*/* $GITHUB_WORKSPACE/f1
           cp -r ./tmp/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotesF1.htm
-          rmdir -p tmp
+          rm -r tmp
                     
           git config --global user.name 'svcguy'
           git config --global user.email '5302949+svcguy@users.noreply.github.com'
