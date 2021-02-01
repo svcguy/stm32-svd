@@ -84,7 +84,7 @@ jobs:
           wget https://www.st.com/resource/en/svd/stm32l4plus_svd.zip    
           unzip stm32l4plus_svd* -d ./tmp          
           cp -r ./tmp/STM32L4+*/* $GITHUB_WORKSPACE/l4plus
-          cp -r ./tmp/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesL4+.htm
+          cp -r ./tmp/STM32L4+_svd/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesL4+.htm
           rm -r tmp
           wget https://www.st.com/resource/en/svd/stm32mp1_svd.zip    
           unzip stm32mp1_svd* -d ./tmp          
