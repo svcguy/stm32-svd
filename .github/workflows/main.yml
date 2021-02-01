@@ -101,6 +101,8 @@ jobs:
           cp -r ./tmp/STM32WL*/* $GITHUB_WORKSPACE/wl
           cp -r ./tmp/STM32WL_svd/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesWL.htm
           rm -r tmp
+          
+          rm *.zip
                     
           git config --global user.name 'svcguy'
           git config --global user.email '5302949+svcguy@users.noreply.github.com'
