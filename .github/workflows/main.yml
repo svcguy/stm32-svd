@@ -122,7 +122,10 @@ jobs:
           git add wb/
           git add wl/
           git commit -am "Daily Update"
+          if [ $? -eq 0 ]
+          then
           git push
+          fi
           
           
           
