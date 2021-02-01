@@ -5,6 +5,7 @@ name: fetch-svd
 
 # Runs on a schedule 
 on:
+    workflow_dispatch:
     schedule:
       - cron: "0 0 * * *"
   
