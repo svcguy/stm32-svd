@@ -49,7 +49,7 @@ jobs:
           wget https://www.st.com/resource/en/svd/stm32f7_svd.zip    
           unzip stm32f7_svd* -d ./tmp          
           cp -r ./tmp/STM32F7*/* $GITHUB_WORKSPACE/f7
-          cp -r ./tmp/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesF7.htm
+          cp -r ./tmp/STM32F7_svd/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesF7.htm
           rm -r tmp
           wget https://www.st.com/resource/en/svd/stm32g0_svd.zip    
           unzip stm32g0_svd* -d ./tmp          
