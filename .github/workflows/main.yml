@@ -107,6 +107,21 @@ jobs:
           git add ReleaseNotes/
           git add f0/
           git add f1/
+          git add f2/
+          git add f3/
+          git add f4/
+          git add f7/
+          git add g0/
+          git add g4/
+          git add h7/
+          git add l0/
+          git add l1/
+          git add l4/
+          git add l4plus/
+          git add l5/
+          git add mp1/
+          git add wb/
+          git add wl/
           git commit -am "Daily Update"
           git push
           
