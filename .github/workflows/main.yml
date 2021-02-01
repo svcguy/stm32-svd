@@ -23,8 +23,8 @@ jobs:
         run: |
           wget https://www.st.com/resource/en/svd/stm32f0_svd.zip    
           unzip stm32f0_svd* -d ./tmp          
-          cp -r ./tmp/STM32F0*/* $GITHUB_WORKSPACE/f0          
-          cp -r ./tmp/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesF0.htm
+          sudo cp -r ./tmp/STM32F0*/* $GITHUB_WORKSPACE/f0          
+          sudo cp -r ./tmp/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesF0.htm
           git config --global user.name 'svcguy'
           git config --global user.email '5302949+svcguy@users.noreply.github.com'
           git commit -am "Daily Update"
