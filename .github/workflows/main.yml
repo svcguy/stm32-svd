@@ -121,9 +121,17 @@ jobs:
           git add mp1/
           git add wb/
           git add wl/
-          git commit -am "Daily Update"
-          if [ $? -eq 0 ]; then; git push; else; echo "Nothing to commit"; fi
-          
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+            commit_message: Daily Update had changes
+        
+      - name: "Run if changes have been detected"
+        if: steps.auto-commit-action.outputs.changes_detected == 'true'
+        run: git push
+
+      - name: "Run if no changes have been detected"
+        if: steps.auto-commit-action.outputs.changes_detected == 'false'
+        run: echo "No Changes!"         
           
           
           
