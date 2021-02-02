@@ -48,22 +48,22 @@ jobs:
           rm -r tmp
           wget https://www.st.com/resource/en/svd/stm32f7_svd.zip    
           unzip stm32f7_svd* -d ./tmp          
-          cp -r ./tmp/STM32F7_svd/*.svd $GITHUB_WORKSPACE/f7
+          cp -r ./tmp/STM32F7*/STM32F7*/*.svd $GITHUB_WORKSPACE/f7
           cp -r ./tmp/STM32F7_svd/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesF7.htm
           rm -r tmp
           wget https://www.st.com/resource/en/svd/stm32g0_svd.zip    
           unzip stm32g0_svd* -d ./tmp          
-          cp -r ./tmp/STM32G0_svd/*.svd $GITHUB_WORKSPACE/g0
+          cp -r ./tmp/STM32G0*/STM32G0*/*.svd $GITHUB_WORKSPACE/g0
           cp -r ./tmp/STM32G0_svd/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesG0.htm
           rm -r tmp
           wget https://www.st.com/resource/en/svd/stm32g4_svd.zip    
           unzip stm32g4_svd* -d ./tmp          
-          cp -r ./tmp/STM32G4_svd/*.svd $GITHUB_WORKSPACE/g4
+          cp -r ./tmp/STM32G4*/STM32G4*/*.svd $GITHUB_WORKSPACE/g4
           cp -r ./tmp/STM32G4_svd/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesG4.htm
           rm -r tmp
           wget https://www.st.com/resource/en/svd/stm32h7_svd.zip    
           unzip stm32h7_svd* -d ./tmp          
-          cp -r ./tmp/STM32H7_svd/*.svd $GITHUB_WORKSPACE/h7
+          cp -r ./tmp/STM32H7*/STM32H7*/*.svd $GITHUB_WORKSPACE/h7
           cp -r ./tmp/STM32H7_svd/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesH7.htm
           rm -r tmp
           wget https://www.st.com/resource/en/svd/stm32l0_svd.zip    
@@ -78,12 +78,12 @@ jobs:
           rm -r tmp
           wget https://www.st.com/resource/en/svd/stm32l4_svd.zip    
           unzip stm32l4_svd* -d ./tmp          
-          cp -r ./tmp/STM32L4_svd/*.svd $GITHUB_WORKSPACE/l4
+          cp -r ./tmp/STM32L4*/STM32L4*/*.svd $GITHUB_WORKSPACE/l4
           cp -r ./tmp/STM32L4_svd/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesL4.htm
           rm -r tmp
           wget https://www.st.com/resource/en/svd/stm32l4plus_svd.zip    
           unzip stm32l4plus_svd* -d ./tmp          
-          cp -r ./tmp/STM32L4+_svd/*.svd $GITHUB_WORKSPACE/l4plus
+          cp -r ./tmp/STM32L4*/STM32L4*/*.svd $GITHUB_WORKSPACE/l4plus
           cp -r ./tmp/STM32L4+_svd/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesL4+.htm
           rm -r tmp
           wget https://www.st.com/resource/en/svd/stm32mp1_svd.zip    
@@ -93,12 +93,12 @@ jobs:
           rm -r tmp
           wget https://www.st.com/resource/en/svd/stm32wb_svd.zip    
           unzip stm32wb_svd* -d ./tmp          
-          cp -r ./tmp/STM32WB_svd/*.svd $GITHUB_WORKSPACE/wb
+          cp -r ./tmp/STM32WB*/STM32WB*/*.svd $GITHUB_WORKSPACE/wb
           cp -r ./tmp/STM32WB_svd/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesWB.htm
           rm -r tmp
           wget https://www.st.com/resource/en/svd/stm32wl_svd.zip    
           unzip stm32wl_svd* -d ./tmp          
-          cp -r ./tmp/STM32WL_svd/*.svd $GITHUB_WORKSPACE/wl
+          cp -r ./tmp/STM32WL*/STM32WL*/*.svd $GITHUB_WORKSPACE/wl
           cp -r ./tmp/STM32WL_svd/Release_Notes.htm $GITHUB_WORKSPACE/ReleaseNotes/ReleaseNotesWL.htm
           rm -r tmp
           
